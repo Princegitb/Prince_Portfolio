@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-ivory: #F6F3EC;
+    --color-espresso: #121110;
+    --color-bronze: #B08C57;
+    --color-bronze-light: #C5A472;
+    --color-telemetry-cyan: #3E8E94;
+  }
+
+  body {
+    background-color: #F6F3EC;
+    color: #121110;
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(176, 140, 87, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(176, 140, 87, 0.05) 1px, transparent 1px);
+    background-attachment: fixed;
+  }
+
+  /* Universal Fluid Responsive Container that adapts dynamically from 55% to 100%+ zoom */
+  .lab-container {
+    width: 100%;
+    max-width: 1760px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .lab-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lab-container {
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .lab-container {
+      max-width: 2080px;
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  @media (min-width: 2200px) {
+    .lab-container {
+      max-width: 2400px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  }
+
+  /* Custom subtle archival paper grain & grid */
+  .archival-bg-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(176, 140, 87, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(176, 140, 87, 0.08) 1px, transparent 1px);
+  }
+
+  .archival-dot-grid {
+    background-size: 24px 24px;
+    background-image: radial-gradient(circle, rgba(176, 140, 87, 0.18) 1px, transparent 1px);
+  }
+
+  .dark-lab-grid {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(197, 164, 114, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(197, 164, 114, 0.05) 1px, transparent 1px);
+  }
+
+  /* Custom sleek scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #EFEAE0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C5A472;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94723F;
+  }
+}
+
+/* Technical typography & decorative elements */
+.font-display {
+  font-family: 'Cinzel', 'Playfair Display', serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', 'Space Mono', monospace;
+}
+
+/* Archival stamp effect */
+.archival-stamp {
+  border: 1px dashed rgba(176, 140, 87, 0.6);
+  background: rgba(176, 140, 87, 0.04);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* Glassmorphism restrained for engineering cards */
+.lab-card-dark {
+  background: radial-gradient(120% 120% at 50% 10%, #1A1816 0%, #11100F 100%);
+  border: 1px solid rgba(197, 164, 114, 0.22);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.lab-card-light {
+  background: #FCFAF7;
+  border: 1px solid rgba(197, 164, 114, 0.28);
+  box-shadow: 0 10px 30px rgba(18, 17, 16, 0.04);
+}
+
+/* Coordinate crosshair marker */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::before {
+  content: '+';
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #B08C57;
+  opacity: 0.7;
+}
+
+/* Subtle scanline effect for simulation HUD */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.15)
+  );
+  background-size: 100% 4px;
+}
+
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 8s linear infinite;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
