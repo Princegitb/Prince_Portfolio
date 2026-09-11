@@ -56,7 +56,7 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
       case 'achievements':
         newHistory.push(
           'HONORS & RECOGNITION:',
-          '  ★ TOP 5: InnovateNSUT\'25 Hackathon (NSUT Delhi, 2025)',
+          '  ★ TOP 5: BuildX Hackathon (NSUT Delhi, 2025)',
           '  ★ TOP 50: ACTS EDC Brainwave Hackathon (1,500+ participants, 2026)',
           '  ★ 91% CBSE Class XII: Senior Secondary (R.P.V.V, 2024)',
           '  ★ 88% CBSE Class X: Secondary School Examination'

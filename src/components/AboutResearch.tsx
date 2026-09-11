@@ -169,7 +169,7 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
               I am an engineering student pursuing my B.Tech in Automation & Robotics at the University School of Automation and Robotics (USAR), GGSIPU, New Delhi. I love software engineering and problem solving — whether that's training machine learning models on satellite data, developing enterprise chatbots, or building responsive full-stack web applications.
             </p>
             <p className="mt-2 font-sans text-sm text-espresso-700 leading-relaxed">
-              Outside the classroom, I've worked as an intern at Dixon Technologies, built production applications like Vayushetra and 11 Towers, and competed in hackathons including InnovateNSUT'25 (Top 5 Finalist) and Brainwave Hackathon (Top 50 nationwide).
+              Outside the classroom, I've worked as an intern at Dixon Technologies, built production applications like Vayushetra and 11 Towers, and competed in hackathons including BuildX Hackathon at NSUT (Top 5 Finalist) and Brainwave Hackathon (Top 50 nationwide).
             </p>
           </div>
 

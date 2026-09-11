@@ -412,36 +412,36 @@ export const ProjectVayushetra: React.FC<VayushetraProps> = ({ setRoute }) => {
         {/* Real Project Interface Capture 01 (6 cols) */}
         <div className="lg:col-span-6 lab-card-dark p-4 border border-bronze-500/40 shadow-panel">
           <div className="flex items-center justify-between pb-3 border-b border-espresso-700/80 mb-3 text-ivory-200 font-mono text-xs">
-            <span className="text-bronze-300 font-bold">PRODUCTION UI // ATMOSPHERIC OVERVIEW</span>
+            <span className="text-bronze-300 font-bold">PRODUCTION UI // ATMOSPHERIC INTELLIGENCE PLATFORM</span>
             <span className="text-taupe-400 text-[10px]">REAL SYSTEM ARTIFACT</span>
           </div>
           <div className="rounded overflow-hidden border border-espresso-700 group relative">
             <img
               src="/assets/vayushetra_hero.png"
-              alt="Vayushetra Atmospheric Overview Interface"
+              alt="Vayushetra Atmospheric Intelligence Platform Interface"
               className="w-full h-auto object-cover filter contrast-105"
             />
           </div>
           <p className="mt-3 font-mono text-[11px] text-taupe-300">
-            Real-time environmental intelligence platform displaying pan-India satellite ingestion, active fire counts, and HCHO/PM2.5 metrics.
+            Production landing interface with live NCAP/ISRO integration, Sentinel-5P TROPOMI trace gas retrievals, ERA5 boundary layer modeling, and transboundary smoke tracking.
           </p>
         </div>
 
         {/* Real Project Interface Capture 02 (6 cols) */}
         <div className="lg:col-span-6 lab-card-dark p-4 border border-bronze-500/40 shadow-panel">
           <div className="flex items-center justify-between pb-3 border-b border-espresso-700/80 mb-3 text-ivory-200 font-mono text-xs">
-            <span className="text-bronze-300 font-bold">GEOSPATIAL MAPPING // 706-CELL PARTITION</span>
+            <span className="text-bronze-300 font-bold">COMMAND CHAMBER // MULTI-POLLUTANT TELEMETRY</span>
             <span className="text-taupe-400 text-[10px]">ANALYTICS ENGINE</span>
           </div>
           <div className="rounded overflow-hidden border border-espresso-700 group relative">
             <img
               src="/assets/vayushetra_map.png"
-              alt="Vayushetra 706-Cell Spatial Grid and Hotspot Map"
+              alt="Vayushetra Atmospheric Command Center and Speciation Diagnostics"
               className="w-full h-auto object-cover filter contrast-105"
             />
           </div>
           <p className="mt-3 font-mono text-[11px] text-taupe-300">
-            Hyperlocal spatial grid partition covering northern agricultural belts, mapping hotspot intensity and wind advection trajectories.
+            Real-time command chamber with multi-pollutant speciation diagnostics (PM2.5, PM10, NO₂, SO₂, CO, O₃, AOD), boundary layer inversion height, and atmospheric transport vectors.
           </p>
         </div>
       </div>

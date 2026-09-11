@@ -56,6 +56,30 @@ export const Project11Towers: React.FC<TowersProps> = ({ setRoute }) => {
         </p>
       </div>
 
+      {/* Production UI Interface Capture */}
+      <div className="mb-10 lab-card-dark p-4 sm:p-5 border border-bronze-500/40 shadow-panel">
+        <div className="flex flex-wrap items-center justify-between pb-3 border-b border-espresso-700/80 mb-3 text-ivory-200 font-mono text-xs gap-2">
+          <div className="flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-telemetry-emerald inline-block"></span>
+            <span className="text-bronze-300 font-bold">PRODUCTION APPLICATION // LIVE PORTAL</span>
+          </div>
+          <span className="text-taupe-400 text-[10px]">POCKET-6, SECTOR-35, ROHINI, DELHI • 11 TOWERS RWA</span>
+        </div>
+        <div className="rounded overflow-hidden border border-espresso-700 bg-espresso-950 group relative">
+          <img
+            src="/assets/11towers_platform.png"
+            alt="11 Towers Residential Society Management Portal"
+            className="w-full h-auto object-contain filter contrast-105 transition-transform duration-500 group-hover:scale-[1.01]"
+          />
+        </div>
+        <div className="mt-3 flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] text-taupe-300">
+          <p>
+            Live community portal offering tenant self-service, complaint escalation, facility scheduling, and verified resident directory.
+          </p>
+          <span className="text-bronze-300 text-[10px] font-semibold">REACT • NODE.JS • EXPRESS</span>
+        </div>
+      </div>
+
       {/* Feature Architecture Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
         <div className="lab-card-light p-6 border border-bronze-400/40">

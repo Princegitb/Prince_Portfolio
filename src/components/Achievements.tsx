@@ -50,12 +50,12 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
           <span>COMPETITIVE HACKATHONS</span>
         </div>
 
-        {/* 2-Column Grid: InnovateNSUT'25 (Top 5) & Brainwave 2026 (Top 50) */}
+        {/* 2-Column Grid: BuildX Hackathon (Top 5) & Brainwave 2026 (Top 50) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-          {/* Card 01: InnovateNSUT'25 - TOP 5 FINALISTS AT NSUT DELHI */}
+          {/* Card 01: BuildX Hackathon - TOP 5 FINALISTS AT NSUT DELHI */}
           <div className="lg:col-span-6 lab-card-light p-6 sm:p-7 border border-bronze-400/50 shadow-archival relative overflow-hidden flex flex-col justify-between">
             <div className="absolute top-4 right-4 px-2.5 py-0.5 text-[9px] font-mono font-bold text-bronze-700 bg-bronze-500/10 border border-bronze-500/40">
-              NSUT DELHI • 2025
+              BUILDX • NSUT DELHI
             </div>
 
             <div className="space-y-3 font-mono">
@@ -72,7 +72,7 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
               </div>
 
               <div className="text-lg font-bold text-espresso-900 font-sans">
-                InnovateNSUT'25 Hackathon
+                BuildX Hackathon
               </div>
 
               <div className="text-xs text-bronze-700 font-semibold font-mono flex items-center gap-1.5">
@@ -80,8 +80,21 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
               </div>
 
               <p className="text-xs text-espresso-800 font-sans leading-relaxed pt-1">
-                Secured a <strong>Top 5 Finalist</strong> position at NSUT Delhi in their premier hackathon, <em>InnovateNSUT'25</em>. Architected, coded, and demonstrated an innovative software engineering solution under competitive offline constraints, evaluated by senior faculty and industry jury.
+                Secured a <strong>Top 5 Finalist</strong> position at NSUT Delhi in the premier <em>BuildX Hackathon</em>. Architected, coded, and demonstrated an innovative engineering solution under competitive offline constraints, evaluated by senior faculty and industry jury.
               </p>
+            </div>
+
+            {/* Photograph from BuildX Hackathon Stage - Full 3:2 Aspect Ratio */}
+            <div className="mt-4 rounded border-2 border-espresso-800 overflow-hidden shadow-md bg-espresso-950 relative group">
+              <img
+                src="/assets/buildx_hackathon.jpg"
+                alt="BuildX Hackathon Stage Certificate Presentation at NSUT Delhi"
+                className="w-full aspect-[3/2] object-contain bg-espresso-950 transition-transform duration-500 group-hover:scale-[1.01]"
+              />
+              <div className="p-2.5 bg-espresso-900 border-t border-espresso-800 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] text-ivory-200">
+                <span className="text-taupe-300">BUILDX STAGE CERTIFICATE CEREMONY</span>
+                <span className="text-telemetry-emerald font-semibold">TOP 5 FINALISTS</span>
+              </div>
             </div>
 
             <div className="pt-4 mt-4 border-t border-bronze-200/60 grid grid-cols-2 gap-3 text-xs font-mono">
