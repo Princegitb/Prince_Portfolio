@@ -59,8 +59,8 @@ export const Hero: React.FC<HeroProps> = ({ setRoute }) => {
 
       {/* The Two Major Modules: Profile Card & 3D Interactive Model */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch relative z-10">
-        {/* Left Module: Developer Profile Card */}
-        <div className="lg:col-span-5 flex flex-col justify-between lab-card-light p-6 sm:p-7 xl:p-8 relative overflow-hidden border border-bronze-400/50 shadow-archival rounded-sm">
+        {/* Left Module: Developer Profile Card (Expanded) */}
+        <div className="lg:col-span-7 flex flex-col justify-between lab-card-light p-6 sm:p-7 xl:p-8 relative overflow-hidden border border-bronze-400/50 shadow-archival rounded-sm">
           {/* Subtle Status Stamp */}
           <div className="absolute top-4 right-4 px-2.5 py-1 text-[9px] font-mono font-bold text-bronze-700 bg-bronze-500/10 border border-bronze-500/40">
             AVAILABLE
@@ -183,8 +183,8 @@ export const Hero: React.FC<HeroProps> = ({ setRoute }) => {
           </div>
         </div>
 
-        {/* Right Module: 3D Interactive Model */}
-        <div className="lg:col-span-7 flex flex-col justify-between h-full">
+        {/* Right Module: 3D Interactive Model (Streamlined) */}
+        <div className="lg:col-span-5 flex flex-col justify-between h-full">
           <RobotViewer onRobotClick={() => handleAction('telemetry')} />
 
           {/* Sub-Panel Legend */}
