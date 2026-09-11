@@ -45,10 +45,21 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
           'AVAILABLE COMMANDS:',
           '  about       - Inspect academic and engineering philosophy',
           '  projects    - List major operational projects',
+          '  achieve     - View competitive hackathon & academic honors',
           '  status      - Query current autonomous lab kinematics',
           '  resume      - Trigger Prince Shukla resume download',
           '  contact     - Display direct contact channels',
           '  clear       - Purge terminal buffer'
+        );
+        break;
+      case 'achieve':
+      case 'achievements':
+        newHistory.push(
+          'ENGINEERING RECORDS & COMPETITIVE HONORS:',
+          '  ★ TOP 5: InnovateNSUT\'25 Hackathon (NSUT Delhi, 2025)',
+          '  ★ TOP 50: ACTS EDC Brainwave Hackathon (1,500+ participants, 2026)',
+          '  ★ 91% CBSE Class XII: Senior Secondary (R.P.V.V, 2024)',
+          '  ★ 88% CBSE Class X: Secondary School Examination'
         );
         break;
       case 'about':

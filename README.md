@@ -40,8 +40,13 @@ This portfolio is constructed with an editorial archival aesthetic inspired by p
 - **11 Towers Real Estate Platform**:
   - High-concurrency full-stack property platform with dynamic floorplan filtering and responsive state management.
 
-### 3. Interactive Laboratory Terminal (`>_`)
-- In-browser CLI emulator accepting commands: `help`, `status`, `projects`, `resume`, `contact`, `clear`.
+### 3. Competitive Hackathons & Distinctions
+- **InnovateNSUT'25 (NSUT Delhi)**: **TOP 5 FINALISTS** — Designed and pitched high-impact software engineering architectures under competitive constraints at Netaji Subhas University of Technology, Delhi.
+- **ACTS EDC Brainwave Hackathon 2026**: **TOP 50 FINALISTS** — Outperformed over 1,500+ engineering participants (Top 3.3% cohort).
+- **Academic Foundation**: 91% in CBSE Class XII (R.P.V.V Delhi) and 88% in CBSE Class X.
+
+### 4. Interactive Laboratory Terminal (`>_`)
+- In-browser CLI emulator accepting commands: `help`, `status`, `projects`, `achieve`, `resume`, `contact`, `clear`.
 - Audio feedback synthesized using the **Web Audio API** for tactile mechanical clicks.
 - Direct PDF resume download (`Prince_Shukla_Resume.pdf`) served with strict binary MIME headers.
 

@@ -21,7 +21,7 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
           <span className="text-telemetry-cyan font-semibold">VERIFIED RECORD CORPUS</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-espresso-900 font-medium">RECORD COUNT: 04 VERIFIED ENTRIES</span>
+          <span className="text-espresso-900 font-medium">RECORD COUNT: 05 VERIFIED ENTRIES</span>
           <span className="text-bronze-400">|</span>
           <span className="text-telemetry-emerald font-semibold">AUTHENTICATED</span>
         </div>
@@ -39,60 +39,106 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
           Competitive Hackathons, Academic Rigor & Full-Stack Deployment Authorship
         </p>
         <p className="mt-4 font-sans text-base text-espresso-800 max-w-4xl leading-relaxed">
-          Documented empirical benchmarks reflecting high-pressure algorithmic problem solving, academic excellence within national examination frameworks, and autonomous project ownership.
+          Documented empirical benchmarks reflecting high-pressure algorithmic problem solving, collegiate competitive hackathon standing, academic excellence within national examination frameworks, and autonomous project ownership.
         </p>
       </div>
 
-      {/* Major Highlight 01: Brainwave Hackathon TOP 50 with Authentic Photo */}
-      <div className="lab-card-light p-6 sm:p-8 border border-bronze-400/50 shadow-archival mb-10 relative overflow-hidden">
-        <div className="absolute top-4 right-4 archival-stamp px-3 py-1 text-[10px] font-mono font-bold text-bronze-600 border border-bronze-500/50 rotate-2 hidden sm:block">
-          OFFICIAL CITATION // 2026
+      {/* Competitive Hackathons Section Header */}
+      <div className="space-y-6 mb-10">
+        <div className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-bold flex items-center gap-2">
+          <Trophy className="w-4 h-4 text-bronze-600" />
+          <span>// COLLEGIATE COMPETITIVE HACKATHON RECORDS</span>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          {/* Left Text & Typographic Metric (6 cols) */}
-          <div className="lg:col-span-6 space-y-4 font-mono">
-            <div className="text-[10px] text-bronze-600 font-bold uppercase tracking-widest flex items-center gap-1.5">
-              <Trophy className="w-3.5 h-3.5 text-bronze-600" />
-              <span>COMPETITIVE HACKATHON STANDING</span>
+        {/* 2-Column Grid: InnovateNSUT'25 (Top 5) & Brainwave 2026 (Top 50) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+          {/* Card 01: InnovateNSUT'25 - TOP 5 FINALISTS AT NSUT DELHI */}
+          <div className="lg:col-span-6 lab-card-light p-6 sm:p-7 border border-bronze-400/50 shadow-archival relative overflow-hidden flex flex-col justify-between">
+            <div className="absolute top-4 right-4 archival-stamp px-2.5 py-0.5 text-[9px] font-mono font-bold text-bronze-600 border border-bronze-500/50 rotate-1">
+              NSUT DELHI // 2025
             </div>
 
-            <div className="font-display text-5xl sm:text-6xl font-bold text-espresso-950 leading-tight">
-              TOP 50
+            <div className="space-y-3 font-mono">
+              <div className="text-[10px] text-bronze-600 font-bold uppercase tracking-widest flex items-center gap-1.5">
+                <Sparkles className="w-3.5 h-3.5 text-telemetry-cyan" />
+                <span>OFFICIAL HACKATHON CITATION</span>
+              </div>
+
+              <div className="font-display text-5xl sm:text-6xl font-bold text-espresso-950 leading-tight flex items-baseline gap-2">
+                <span>TOP 5</span>
+                <span className="text-xs font-mono text-telemetry-emerald font-semibold uppercase tracking-wider">
+                  ★ FINALISTS
+                </span>
+              </div>
+
+              <div className="text-lg font-bold text-espresso-900 font-sans">
+                InnovateNSUT'25 Hackathon
+              </div>
+
+              <div className="text-xs text-bronze-700 font-semibold font-mono flex items-center gap-1.5">
+                <span>Netaji Subhas University of Technology (NSUT), Delhi</span>
+              </div>
+
+              <p className="text-xs text-espresso-800 font-sans leading-relaxed pt-1">
+                Clinched a premier <strong>Top 5 Standing</strong> at NSUT Delhi in their flagship hackathon, <em>InnovateNSUT'25</em>. Architected, coded, and demonstrated innovative software engineering solutions under intense competitive offline constraints, thoroughly evaluated and commended by senior jury panels and university faculty.
+              </p>
             </div>
 
-            <div className="text-base font-bold text-espresso-900 font-sans">
-              ACTS EDC Brainwave Hackathon 2026
-            </div>
-
-            <p className="text-xs sm:text-sm text-espresso-800 font-sans leading-relaxed">
-              Outperformed over 1,500+ participants across tertiary engineering institutions. Architected and pitched high-impact software solutions under rigorous 36-hour hackathon constraints evaluated by senior industry engineering panels.
-            </p>
-
-            <div className="pt-2 grid grid-cols-2 gap-3 text-xs">
+            <div className="pt-4 mt-4 border-t border-bronze-200/60 grid grid-cols-2 gap-3 text-xs font-mono">
               <div className="p-2.5 bg-ivory-50 border border-bronze-300/60">
-                <span className="text-[10px] text-taupe-400">PARTICIPANT POOL:</span>
-                <div className="font-bold text-espresso-950 text-sm mt-0.5">1,500+ Engineers</div>
+                <span className="text-[10px] text-taupe-400">VENUE:</span>
+                <div className="font-bold text-espresso-950 text-xs mt-0.5">NSUT, Dwarka, Delhi</div>
               </div>
               <div className="p-2.5 bg-ivory-50 border border-bronze-300/60">
-                <span className="text-[10px] text-taupe-400">FINALS COHORT:</span>
-                <div className="font-bold text-telemetry-emerald text-sm mt-0.5">Top 3.3% Bracket</div>
+                <span className="text-[10px] text-taupe-400">RECORD BRACKET:</span>
+                <div className="font-bold text-telemetry-emerald text-xs mt-0.5">Top 5 Finalists</div>
               </div>
             </div>
           </div>
 
-          {/* Right: Authentic Photograph from Brainwave Hackathon (6 cols) */}
-          <div className="lg:col-span-6">
-            <div className="rounded border-2 border-espresso-800 overflow-hidden shadow-panel bg-espresso-900 group relative">
+          {/* Card 02: ACTS EDC Brainwave Hackathon 2026 - TOP 50 with Authentic Photo */}
+          <div className="lg:col-span-6 lab-card-light p-6 sm:p-7 border border-bronze-400/50 shadow-archival relative overflow-hidden flex flex-col justify-between">
+            <div className="absolute top-4 right-4 archival-stamp px-2.5 py-0.5 text-[9px] font-mono font-bold text-bronze-600 border border-bronze-500/50 rotate-1">
+              FINALS // 2026
+            </div>
+
+            <div className="space-y-3 font-mono">
+              <div className="text-[10px] text-bronze-600 font-bold uppercase tracking-widest flex items-center gap-1.5">
+                <Trophy className="w-3.5 h-3.5 text-bronze-600" />
+                <span>COMPETITIVE HACKATHON STANDING</span>
+              </div>
+
+              <div className="font-display text-5xl sm:text-6xl font-bold text-espresso-950 leading-tight flex items-baseline gap-2">
+                <span>TOP 50</span>
+                <span className="text-xs font-mono text-telemetry-cyan font-semibold uppercase tracking-wider">
+                  / 1,500+ TEAMS
+                </span>
+              </div>
+
+              <div className="text-lg font-bold text-espresso-900 font-sans">
+                ACTS EDC Brainwave Hackathon 2026
+              </div>
+
+              <div className="text-xs text-bronze-700 font-semibold font-mono">
+                ACTS Auditorium // Pan-India Finals
+              </div>
+
+              <p className="text-xs text-espresso-800 font-sans leading-relaxed pt-1">
+                Outperformed over 1,500+ participants across tertiary engineering institutions. Architected and pitched high-impact software solutions under 36-hour hackathon constraints evaluated by senior industry panels.
+              </p>
+            </div>
+
+            {/* Authentic Photograph from Brainwave Auditorium */}
+            <div className="mt-3 rounded border border-espresso-800 overflow-hidden shadow-sm bg-espresso-900 relative group">
               <img
                 src="/assets/brainwave_hackathon.jpg"
                 alt="Brainwave 2026 Hackathon Finalists Auditorium"
-                className="w-full h-64 sm:h-72 object-cover object-center filter contrast-105 transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-32 sm:h-36 object-cover object-center filter contrast-105 transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-2 left-3 right-3 flex items-center justify-between font-mono text-[10px] text-ivory-200">
+              <div className="absolute bottom-1.5 left-2.5 right-2.5 flex items-center justify-between font-mono text-[9px] text-ivory-200">
                 <span>ACTS EDC BRAINWAVE AUDITORIUM</span>
-                <span className="text-bronze-300">AUTHENTIC EVENT RECORD</span>
+                <span className="text-bronze-300">TOP 3.3% BRACKET</span>
               </div>
             </div>
           </div>
