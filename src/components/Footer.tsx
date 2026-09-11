@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ setRoute }) => {
             </span>
           </div>
           <p className="text-taupe-300 font-sans text-xs leading-relaxed max-w-sm">
-            B.Tech student in Automation & Robotics at USAR, GGSIPU, Delhi. Experienced in building practical machine learning models, analytics tools, and full-stack web software.
+            I am an engineering student in Automation & Robotics at USAR, GGSIPU, Delhi. I build full-stack web applications and practical machine learning systems.
           </p>
           <div className="text-[11px] text-bronze-400 space-y-0.5">
             <div>USAR, GGSIPU • New Delhi, India</div>

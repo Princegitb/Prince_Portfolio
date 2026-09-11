@@ -70,7 +70,7 @@ export const App: React.FC = () => {
                   </h2>
                 </div>
                 <div className="text-xs font-mono text-taupe-400">
-                  Interactive 3D environments & live demonstrations
+                  Featured projects I've built in ML, Web Development, and Data Science
                 </div>
               </div>
 
@@ -238,7 +238,7 @@ export const App: React.FC = () => {
                       Contact & Connect
                     </h3>
                     <p className="mt-2 text-xs text-taupe-300 leading-relaxed font-sans">
-                      Open to internships, freelance projects, and technical collaborations. Send a message or explore the interactive terminal.
+                      I'm an engineering student eager to take on software roles, internships, and collaborative projects. Feel free to reach out!
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-espresso-700 font-mono text-xs text-bronze-300 font-bold flex items-center justify-between">

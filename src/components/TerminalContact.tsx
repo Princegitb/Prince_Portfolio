@@ -12,9 +12,9 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
   const [copiedPhone, setCopiedPhone] = useState<boolean>(false);
   const [inputVal, setInputVal] = useState<string>('');
   const [cliHistory, setCliHistory] = useState<string[]>([
-    'PRINCE AUTONOMOUS LAB // TERMINAL PROTOCOL V4.2',
-    'TYPE "help" TO LIST AVAILABLE DIAGNOSTIC INSTRUCTIONS',
-    'DIRECT COMMS CHANNELS: READY FOR TRANSMISSION',
+    'PRINCE SHUKLA // INTERACTIVE DEVELOPER TERMINAL',
+    'Type "help" for available commands, or "contact" to view contact info.',
+    'Terminal ready.',
   ]);
 
   const historyEndRef = useRef<HTMLDivElement>(null);
@@ -43,19 +43,19 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
       case 'help':
         newHistory.push(
           'AVAILABLE COMMANDS:',
-          '  about       - Inspect academic and engineering philosophy',
-          '  projects    - List major operational projects',
-          '  achieve     - View competitive hackathon & academic honors',
-          '  status      - Query current autonomous lab kinematics',
-          '  resume      - Trigger Prince Shukla resume download',
-          '  contact     - Display direct contact channels',
-          '  clear       - Purge terminal buffer'
+          '  about       - View background and education',
+          '  projects    - List featured projects',
+          '  achieve     - View hackathon standings and academic honors',
+          '  status      - Query current developer status',
+          '  resume      - Trigger resume download (PDF)',
+          '  contact     - Display email, phone, and links',
+          '  clear       - Clear the terminal screen'
         );
         break;
       case 'achieve':
       case 'achievements':
         newHistory.push(
-          'ENGINEERING RECORDS & COMPETITIVE HONORS:',
+          'HONORS & RECOGNITION:',
           '  ★ TOP 5: InnovateNSUT\'25 Hackathon (NSUT Delhi, 2025)',
           '  ★ TOP 50: ACTS EDC Brainwave Hackathon (1,500+ participants, 2026)',
           '  ★ 91% CBSE Class XII: Senior Secondary (R.P.V.V, 2024)',
@@ -63,30 +63,30 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
         );
         break;
       case 'about':
-        newHistory.push('ROUTING TO: ABOUT & RESEARCH ARCHIVE...');
+        newHistory.push('NAVIGATING TO ABOUT ME...');
         setTimeout(() => setRoute('about'), 500);
         break;
       case 'projects':
         newHistory.push(
-          'PROJECT DIRECTORY:',
-          '  01. Vayushetra (Satellite AQI ML Intelligence)',
-          '  02. Guard Attendance (Haversine 3D Geofence)',
-          '  03. AI Employee Assistant (Dixon Teams Bot)',
-          '  04. Tech Layoffs Analytics (Quantitative Data Lab)',
-          '  05. 11 Towers (Society Management Platform)'
+          'FEATURED PROJECTS:',
+          '  01. Vayushetra (Satellite ML Air Quality Intelligence)',
+          '  02. Guard Attendance (GPS Geofencing Mobile App)',
+          '  03. AI Employee Assistant (Dixon Teams Bot with Gemini)',
+          '  04. Tech Layoffs Analytics (Data Science Dashboard)',
+          '  05. 11 Towers (Residential Society Management Platform)'
         );
         break;
       case 'status':
         newHistory.push(
-          'TELEMETRY CHECK: [NOMINAL]',
-          '  KINEMATICS: 6-DOF Active // Gaze synchronized',
-          '  NEURAL LOAD: 38.4% Nominal',
-          '  LOCATION: Delhi, India',
-          '  AVAILABILITY: OPEN FOR SOFTWARE / AI / ROBOTICS ROLES'
+          'DEVELOPER STATUS: [AVAILABLE]',
+          '  NAME: Prince Shukla',
+          '  ROLE: Engineering Student (Automation & Robotics, USAR GGSIPU)',
+          '  LOCATION: New Delhi, India',
+          '  OPEN FOR: Software Engineering & AI/ML Internships'
         );
         break;
       case 'resume':
-        newHistory.push('INITIATING RESUME DOWNLOAD PROTOCOL: Prince_Shukla_Resume.pdf');
+        newHistory.push('DOWNLOADING RESUME: Prince_Shukla_Resume.pdf');
         const link = document.createElement('a');
         link.href = '/Prince_Shukla_Resume.pdf';
         link.download = 'Prince_Shukla_Resume.pdf';
@@ -96,19 +96,19 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
         break;
       case 'contact':
         newHistory.push(
-          'DIRECT CONTACT INFORMATION:',
+          'CONTACT INFORMATION:',
           '  EMAIL: shukla8331@gmail.com',
           '  PHONE: +91-8595640363',
           '  LINKEDIN: linkedin.com/in/prince-shukla',
-          '  GITHUB: github.com'
+          '  GITHUB: github.com/Princegitb'
         );
         break;
       case 'clear':
-        setCliHistory(['BUFFER PURGED. READY.']);
+        setCliHistory(['TERMINAL CLEARED. READY.']);
         setInputVal('');
         return;
       default:
-        newHistory.push(`UNKNOWN COMMAND: "${cmd}". TYPE "help" FOR PROTOCOL COMMANDS.`);
+        newHistory.push(`Unknown command: "${cmd}". Type "help" to see available options.`);
     }
 
     setCliHistory(newHistory);
@@ -126,10 +126,10 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
         <div className="flex items-center gap-2">
           <Radio className="w-4 h-4 text-bronze-600" />
           <span className="text-bronze-600 font-bold tracking-wider">
-            COMMUNICATIONS TERMINAL // COMM-PORT-443
+            GET IN TOUCH
           </span>
-          <span className="text-bronze-400">|</span>
-          <span className="text-telemetry-emerald font-semibold">ALL CHANNELS SECURE & LISTENING</span>
+          <span className="text-bronze-400">•</span>
+          <span className="text-telemetry-emerald font-semibold">AVAILABLE FOR OPPORTUNITIES</span>
         </div>
         <div className="flex items-center gap-3">
           <button
@@ -140,7 +140,7 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
             className="hover:text-espresso-950 flex items-center gap-1 font-semibold"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
-            <span>RETURN TO COMMAND CENTER</span>
+            <span>RETURN TO HOME</span>
           </button>
         </div>
       </div>
@@ -148,16 +148,16 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
       {/* Hero Invitation Statement */}
       <div className="mb-10">
         <span className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-semibold">
-          // INITIATE TRANSMISSION
+          CONTACT & CONNECT
         </span>
         <h1 className="font-display text-4xl sm:text-6xl font-bold text-espresso-950 tracking-tight mt-1">
-          READY TO BUILD SOMETHING INTELLIGENT?
+          Let's Build Something Together
         </h1>
         <p className="font-mono text-sm sm:text-base text-bronze-600 font-semibold mt-2">
-          Software Development • Applied AI/ML • Geospatial Intelligence • Robotics
+          Full-Stack Development • Machine Learning • Data Science
         </p>
         <p className="mt-4 font-sans text-base text-espresso-800 max-w-3xl leading-relaxed">
-          Whether you are exploring production AI integrations, full-stack architectural builds, autonomous robotics telemetry, or engineering collaborations — the laboratory communication channels are open.
+          Hi! I am an engineering student always eager to take on challenging technical projects, explore internship opportunities, or collaborate on software and AI systems. Feel free to drop a message, send an email, or test out the interactive terminal below!
         </p>
       </div>
 
@@ -168,11 +168,11 @@ export const TerminalContact: React.FC<TerminalContactProps> = ({ setRoute }) =>
           <div className="flex items-center justify-between pb-3 border-b border-espresso-700/80 mb-4 font-mono text-xs text-ivory-200">
             <div className="flex items-center gap-2">
               <Terminal className="w-4 h-4 text-bronze-400" />
-              <span className="font-bold text-bronze-300">LABORATORY CONSOLE // BASH-EMULATOR</span>
+              <span className="font-bold text-bronze-300">INTERACTIVE TERMINAL</span>
             </div>
             <div className="flex items-center gap-2 text-[10px] text-taupe-400">
               <span className="w-2 h-2 rounded-full bg-telemetry-emerald"></span>
-              <span>PORT: 443/TLS</span>
+              <span>ONLINE</span>
             </div>
           </div>
 

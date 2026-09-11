@@ -47,11 +47,11 @@ export const Hero: React.FC<HeroProps> = ({ setRoute }) => {
           </div>
 
           <div className="lg:col-span-5 xl:col-span-4 font-sans text-sm 2xl:text-base text-espresso-800 leading-relaxed border-l-2 border-bronze-400/40 pl-5 py-1">
-            <p className="font-medium text-espresso-900">
-              Building practical machine learning systems, data platforms, and full-stack web applications.
+            <p className="font-semibold text-espresso-950 text-base leading-snug">
+              "Hi! I'm Prince Shukla — an Engineering Student in Automation & Robotics at USAR, GGSIPU, New Delhi."
             </p>
-            <p className="mt-2 text-xs 2xl:text-sm text-taupe-400 font-sans">
-              B.Tech student in Automation & Robotics at USAR, GGSIPU. Experienced in building enterprise AI tools and data analytics systems.
+            <p className="mt-2 text-xs 2xl:text-sm text-espresso-800 font-sans leading-relaxed">
+              I am passionate about building real-world software — from practical machine learning models and data platforms to full-stack web applications. Ex-intern at Dixon Technologies.
             </p>
           </div>
         </div>
@@ -67,16 +67,21 @@ export const Hero: React.FC<HeroProps> = ({ setRoute }) => {
           </div>
 
           {/* Profile Header */}
-          <div className="flex items-center gap-3 pb-4 mb-5 border-b border-bronze-400/30">
+          <div className="flex items-center gap-3 pb-4 mb-4 border-b border-bronze-400/30">
             <Fingerprint className="w-5 h-5 text-bronze-600" />
             <div>
               <div className="font-mono text-[10px] text-bronze-600 font-bold uppercase tracking-wider">
-                DEVELOPER PROFILE
+                ABOUT ME
               </div>
               <h2 className="font-display font-bold text-lg text-espresso-950 tracking-wide">
-                Prince Shukla
+                Hi, I'm Prince Shukla
               </h2>
             </div>
+          </div>
+
+          {/* Personal Intro Statement */}
+          <div className="p-3 bg-ivory-50 border border-bronze-300/60 rounded-sm font-sans text-xs text-espresso-800 leading-relaxed mb-5">
+            <span className="font-semibold text-espresso-950">Engineering Student & Developer:</span> I am currently pursuing my B.Tech in Automation & Robotics. I build practical, real-world tech combining machine learning, full-stack development, and data science.
           </div>
 
           {/* Photo & Primary Bio Container */}

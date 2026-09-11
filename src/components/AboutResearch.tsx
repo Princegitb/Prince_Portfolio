@@ -157,13 +157,19 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
         <div className="lg:col-span-7 space-y-8">
           <div>
             <span className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-semibold">
-              BACKGROUND
+              ABOUT ME
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-espresso-950 mt-1">
-              About Me & Engineering Focus
+              Hi, I'm Prince Shukla
             </h1>
+            <p className="mt-2 font-mono text-sm text-bronze-600 font-semibold">
+              Engineering Student in Automation & Robotics • USAR, GGSIPU
+            </p>
             <p className="mt-4 font-sans text-base text-espresso-800 leading-relaxed">
-              I am a B.Tech student in Automation & Robotics at the University School of Automation and Robotics (USAR), GGSIPU, Delhi. I focus on machine learning systems, data analytics, and full-stack software development, turning complex datasets into reliable, intuitive tools.
+              I am an engineering student pursuing my B.Tech in Automation & Robotics at the University School of Automation and Robotics (USAR), GGSIPU, New Delhi. I love software engineering and problem solving — whether that's training machine learning models on satellite data, developing enterprise chatbots, or building responsive full-stack web applications.
+            </p>
+            <p className="mt-2 font-sans text-sm text-espresso-700 leading-relaxed">
+              Outside the classroom, I've worked as an intern at Dixon Technologies, built production applications like Vayushetra and 11 Towers, and competed in hackathons including InnovateNSUT'25 (Top 5 Finalist) and Brainwave Hackathon (Top 50 nationwide).
             </p>
           </div>
 
