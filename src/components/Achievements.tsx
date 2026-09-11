@@ -128,17 +128,16 @@ export const Achievements: React.FC<AchievementsProps> = ({ setRoute }) => {
               </p>
             </div>
 
-            {/* Photograph from Brainwave Auditorium */}
-            <div className="mt-3 rounded border border-espresso-800 overflow-hidden shadow-sm bg-espresso-900 relative group">
+            {/* Photograph from Brainwave Auditorium - Full 3:2 Aspect Ratio */}
+            <div className="mt-4 rounded border-2 border-espresso-800 overflow-hidden shadow-md bg-espresso-950 relative group">
               <img
                 src="/assets/brainwave_hackathon.jpg"
                 alt="Brainwave 2026 Hackathon Finalists Auditorium"
-                className="w-full h-32 sm:h-36 object-cover object-center filter contrast-105 transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[3/2] object-contain bg-espresso-950 transition-transform duration-500 group-hover:scale-[1.01]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-1.5 left-2.5 right-2.5 flex items-center justify-between font-mono text-[9px] text-ivory-200">
-                <span>ACTS EDC BRAINWAVE AUDITORIUM</span>
-                <span className="text-bronze-300">TOP 3.3% BRACKET</span>
+              <div className="p-2.5 bg-espresso-900 border-t border-espresso-800 flex flex-wrap items-center justify-between gap-2 font-mono text-[10px] text-ivory-200">
+                <span className="text-taupe-300">ACTS EDC BRAINWAVE AUDITORIUM</span>
+                <span className="text-bronze-300 font-semibold">TOP 50 FINALISTS ACROSS INDIA</span>
               </div>
             </div>
           </div>

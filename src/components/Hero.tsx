@@ -84,38 +84,46 @@ export const Hero: React.FC<HeroProps> = ({ setRoute }) => {
             <span className="font-semibold text-espresso-950">Engineering Student & Developer:</span> I am currently pursuing my B.Tech in Automation & Robotics. I build practical, real-world tech combining machine learning, full-stack development, and data science.
           </div>
 
-          {/* Photo & Primary Bio Container */}
-          <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start mb-6">
-            {/* Prince's Authentic Photograph */}
+          {/* Photo & Primary Bio Container - Prominent Enlarged Portrait */}
+          <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-stretch mb-6">
+            {/* Prince's Authentic Photograph (Enlarged) */}
             <div className="relative group flex-shrink-0">
-              <div className="w-36 h-44 sm:w-32 sm:h-40 rounded-sm overflow-hidden border-2 border-espresso-800 shadow-md bg-espresso-900 relative">
+              <div className="w-52 h-68 sm:w-48 sm:h-64 md:w-52 md:h-72 lg:w-48 lg:h-64 xl:w-56 xl:h-76 rounded-sm overflow-hidden border-2 border-bronze-500/70 shadow-lg bg-espresso-900 relative">
                 <img
                   src="/assets/prince_photo.jpg"
                   alt="Prince Shukla"
-                  className="w-full h-full object-cover object-top filter grayscale contrast-110 sepia-[0.15] transition-all duration-500 group-hover:grayscale-0 group-hover:sepia-0"
+                  className="w-full h-full object-cover object-top filter contrast-105 transition-all duration-500 group-hover:scale-105"
                 />
               </div>
             </div>
 
             {/* Personnel Specs */}
-            <div className="flex-1 font-mono text-xs space-y-2 w-full">
-              <div className="flex justify-between border-b border-bronze-300/40 pb-1">
+            <div className="flex-1 font-mono text-xs space-y-2.5 w-full flex flex-col justify-between py-1">
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
                 <span className="text-taupe-400">NAME:</span>
                 <span className="font-bold text-espresso-950">PRINCE SHUKLA</span>
               </div>
-              <div className="flex justify-between border-b border-bronze-300/40 pb-1">
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
+                <span className="text-taupe-400">ROLE:</span>
+                <span className="font-semibold text-espresso-900">ENGINEERING STUDENT</span>
+              </div>
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
                 <span className="text-taupe-400">DEGREE:</span>
                 <span className="text-espresso-900 font-medium">B.TECH AUTOMATION & ROBOTICS</span>
               </div>
-              <div className="flex justify-between border-b border-bronze-300/40 pb-1">
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
                 <span className="text-taupe-400">COLLEGE:</span>
                 <span className="text-espresso-900">USAR, GGSIPU (DELHI)</span>
               </div>
-              <div className="flex justify-between border-b border-bronze-300/40 pb-1">
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
                 <span className="text-taupe-400">BATCH:</span>
                 <span className="text-espresso-900">2024 – 2028</span>
               </div>
-              <div className="flex justify-between border-b border-bronze-300/40 pb-1">
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
+                <span className="text-taupe-400">LOCATION:</span>
+                <span className="text-espresso-900">NEW DELHI, INDIA</span>
+              </div>
+              <div className="flex justify-between border-b border-bronze-300/40 pb-1.5">
                 <span className="text-taupe-400">STATUS:</span>
                 <span className="text-telemetry-emerald font-semibold flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-telemetry-emerald inline-block"></span>
