@@ -45,20 +45,20 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
 
   return (
     <header className="sticky top-0 z-50 bg-[#161412] text-ivory-100 border-b border-bronze-600/30 backdrop-blur-md">
-      {/* Top Technical Metadata Bar */}
+      {/* Top Metadata Bar */}
       <div className="hidden lg:block border-b border-bronze-700/20 py-1 text-[11px] font-mono text-taupe-300 tracking-wider">
         <div className="lab-container flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <span className="flex items-center gap-1.5 text-telemetry-cyan font-medium">
-              <span className="inline-block w-1.5 h-1.5 rounded-full bg-telemetry-cyan animate-pulse"></span>
-              SYS: DUAL-CORE KINEMATICS NOMINAL
+            <span className="flex items-center gap-1.5 text-telemetry-emerald font-medium">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-telemetry-emerald animate-pulse"></span>
+              OPEN TO OPPORTUNITIES
             </span>
-            <span className="text-bronze-400">|</span>
-            <span>EST. 2024 • B.TECH ROBOTICS & AI (USAR, GGSIPU)</span>
+            <span className="text-bronze-400">•</span>
+            <span>B.TECH AUTOMATION & ROBOTICS (USAR, GGSIPU)</span>
           </div>
           <div className="flex items-center gap-5">
-            <span className="text-bronze-300">ARCHIVE REF: <span className="text-ivory-100 font-semibold">05719052024-AR</span></span>
-            <span className="text-bronze-400">|</span>
+            <span className="text-bronze-300">LOCATION: <span className="text-ivory-100 font-medium">NEW DELHI, INDIA</span></span>
+            <span className="text-bronze-400">•</span>
             <span className="text-ivory-200">{time || '00:00:00 IST'}</span>
           </div>
         </div>
@@ -66,26 +66,26 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
 
       {/* Main Navigation Bar */}
       <div className="lab-container py-3.5 flex items-center justify-between">
-        {/* Brand / Laboratory Identity */}
+        {/* Brand */}
         <div 
           onClick={() => handleNav('command-center')}
           className="cursor-pointer group flex items-center gap-3"
         >
           <div className="w-9 h-9 border border-bronze-500/40 bg-espresso-900 flex items-center justify-center relative overflow-hidden transition-all group-hover:border-bronze-400">
             <div className="absolute inset-0 bg-bronze-500/10 scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-            <span className="font-display font-bold text-bronze-300 text-sm tracking-widest relative z-10">Ψ</span>
+            <span className="font-display font-bold text-bronze-300 text-sm tracking-widest relative z-10">P</span>
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-display tracking-[0.2em] text-base font-bold text-ivory-50 group-hover:text-bronze-300 transition-colors">
-                PRINCE
+              <span className="font-display tracking-[0.15em] text-base font-bold text-ivory-50 group-hover:text-bronze-300 transition-colors">
+                PRINCE SHUKLA
               </span>
               <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-bronze-500/15 text-bronze-300 border border-bronze-500/30">
-                AUTONOMOUS LAB
+                PORTFOLIO
               </span>
             </div>
             <p className="text-[10px] font-mono text-taupe-400 tracking-wider hidden sm:block">
-              ENGINEERING ARCHIVE & PHYSICAL-DIGITAL SYSTEMS
+              FULL-STACK DEVELOPER & ML ENGINEER
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
                 : 'text-taupe-300 hover:text-ivory-100 hover:bg-espresso-800/40'
             }`}
           >
-            COMMAND CENTER
+            HOME
           </button>
 
           <button
@@ -111,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
                 : 'text-taupe-300 hover:text-ivory-100 hover:bg-espresso-800/40'
             }`}
           >
-            ABOUT & RESEARCH
+            ABOUT
           </button>
 
           <button
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
                   : 'text-taupe-300 hover:text-ivory-100 hover:bg-espresso-800/40'
               }`}
             >
-              <span>SELECTED WORKS</span>
+              <span>PROJECTS</span>
               <ChevronDown className={`w-3.5 h-3.5 transition-transform ${worksOpen ? 'rotate-180 text-bronze-400' : ''}`} />
             </button>
 
@@ -145,35 +145,35 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
                 onMouseLeave={() => setWorksOpen(false)}
               >
                 <div className="px-3 py-1.5 text-[9px] text-bronze-400 uppercase tracking-widest border-b border-espresso-700/60">
-                  // RESEARCH & OPERATIONAL PROJECTS
+                  FEATURED PROJECTS
                 </div>
                 <button
                   onClick={() => handleNav('vayushetra')}
                   className="w-full text-left px-3 py-2 hover:bg-espresso-800 flex items-center justify-between text-ivory-200 hover:text-bronze-300 group"
                 >
                   <span className="font-semibold">01. VAYUSHETRA</span>
-                  <span className="text-[9px] text-telemetry-cyan bg-telemetry-teal/20 px-1.5 py-0.5 rounded">FLAGSHIP GEOINT</span>
+                  <span className="text-[9px] text-telemetry-cyan bg-telemetry-teal/20 px-1.5 py-0.5 rounded">SATELLITE ML</span>
                 </button>
                 <button
                   onClick={() => handleNav('guard-system')}
                   className="w-full text-left px-3 py-2 hover:bg-espresso-800 flex items-center justify-between text-ivory-200 hover:text-bronze-300"
                 >
                   <span>02. GUARD ATTENDANCE</span>
-                  <span className="text-[9px] text-taupe-400">3D HAVERSINE</span>
+                  <span className="text-[9px] text-taupe-400">GEOFENCING</span>
                 </button>
                 <button
                   onClick={() => handleNav('ai-assistant')}
                   className="w-full text-left px-3 py-2 hover:bg-espresso-800 flex items-center justify-between text-ivory-200 hover:text-bronze-300"
                 >
                   <span>03. AI EMPLOYEE BOT</span>
-                  <span className="text-[9px] text-bronze-400">DIXON / AZURE</span>
+                  <span className="text-[9px] text-bronze-400">DIXON / NLP</span>
                 </button>
                 <button
                   onClick={() => handleNav('tech-layoffs')}
                   className="w-full text-left px-3 py-2 hover:bg-espresso-800 flex items-center justify-between text-ivory-200 hover:text-bronze-300"
                 >
                   <span>04. LAYOFFS ANALYTICS</span>
-                  <span className="text-[9px] text-taupe-400">DATA LAB</span>
+                  <span className="text-[9px] text-taupe-400">DATA SCIENCE</span>
                 </button>
                 <button
                   onClick={() => handleNav('11-towers')}
@@ -194,7 +194,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
                 : 'text-taupe-300 hover:text-ivory-100 hover:bg-espresso-800/40'
             }`}
           >
-            TELEMETRY & STACK
+            SKILLS & STACK
           </button>
 
           <button
@@ -217,16 +217,16 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
             }`}
           >
             <Terminal className="w-3.5 h-3.5 text-bronze-400" />
-            <span>TERMINAL</span>
+            <span>CONTACT</span>
           </button>
         </nav>
 
         {/* Right Action Cluster */}
         <div className="flex items-center gap-2.5">
-          {/* Audio Synthesizer Toggle */}
+          {/* Audio Toggle */}
           <button
             onClick={toggleSound}
-            title={soundEnabled ? "Mute Laboratory Feedback" : "Enable Tactile Laboratory Acoustic Feedback"}
+            title={soundEnabled ? "Mute sound" : "Enable sound effects"}
             className="p-1.5 rounded border border-bronze-700/40 text-taupe-400 hover:text-bronze-300 hover:border-bronze-500 transition-colors"
           >
             {soundEnabled ? (
@@ -264,7 +264,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
           onClick={() => handleNav('command-center')} 
           className={`px-2 py-1 ${currentRoute === 'command-center' ? 'text-bronze-300 font-bold' : 'text-taupe-400'}`}
         >
-          COMMAND
+          HOME
         </button>
         <button 
           onClick={() => handleNav('about')} 
@@ -282,19 +282,19 @@ export const Navbar: React.FC<NavbarProps> = ({ currentRoute, setRoute }) => {
           onClick={() => handleNav('vayushetra')} 
           className={`px-2 py-1 ${isProjectActive ? 'text-bronze-300 font-bold' : 'text-taupe-400'}`}
         >
-          WORKS
+          PROJECTS
         </button>
         <button 
           onClick={() => handleNav('telemetry')} 
           className={`px-2 py-1 ${currentRoute === 'telemetry' ? 'text-bronze-300 font-bold' : 'text-taupe-400'}`}
         >
-          STACK
+          SKILLS
         </button>
         <button 
           onClick={() => handleNav('terminal')} 
           className={`px-2 py-1 ${currentRoute === 'terminal' ? 'text-bronze-300 font-bold' : 'text-taupe-400'}`}
         >
-          TERMINAL
+          CONTACT
         </button>
       </div>
     </header>

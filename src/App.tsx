@@ -58,19 +58,19 @@ export const App: React.FC = () => {
           <div>
             <Hero setRoute={handleSetRoute} />
 
-            {/* Works Launchpad Section on Command Center */}
+            {/* Projects Launchpad Section on Home */}
             <section className="py-14 lab-container border-t border-bronze-500/25">
               <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
                 <div>
                   <span className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-semibold">
-                    // SELECTED WORKS & RESEARCH
+                    FEATURED WORK
                   </span>
                   <h2 className="font-display text-3xl sm:text-4xl font-bold text-espresso-950 mt-1">
-                    Autonomous Deployments & Systems
+                    Selected Projects
                   </h2>
                 </div>
                 <div className="text-xs font-mono text-taupe-400">
-                  EACH PROJECT INCLUDES A DEDICATED 3D INTERACTIVE ENVIRONMENT
+                  Interactive 3D environments & live demonstrations
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export const App: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between text-[10px] font-mono mb-2">
                       <span className="px-2 py-0.5 bg-bronze-500/15 text-bronze-700 font-bold border border-bronze-500/30">
-                        01. FLAGSHIP
+                        01. SATELLITE ML
                       </span>
                       <span className="text-telemetry-cyan font-bold">R² = 0.89</span>
                     </div>
@@ -94,13 +94,13 @@ export const App: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mt-2 text-xs text-espresso-800 line-clamp-3 leading-relaxed">
-                      3D Earth and atmospheric intelligence platform synthesizing Sentinel-5P satellite tropospheric data, NASA VIIRS fire hotspots, and XGBoost smoke transit modeling.
+                      Air quality forecasting and smoke plume tracking platform synthesizing Sentinel-5P satellite data, NASA VIIRS fire hotspots, and XGBoost machine learning.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-bronze-200/60 flex items-center justify-between font-mono text-[10px]">
-                    <span className="text-taupe-400">GEOINT / ML GLOBE</span>
+                    <span className="text-taupe-400">PYTHON / XGBOOST / 3D GLOBE</span>
                     <span className="font-bold text-bronze-600 group-hover:text-espresso-950 flex items-center gap-1">
-                      ENTER ENVIRONMENT <ArrowRight className="w-3 h-3" />
+                      VIEW PROJECT <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
@@ -113,9 +113,9 @@ export const App: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between text-[10px] font-mono mb-2">
                       <span className="px-2 py-0.5 bg-espresso-900 text-bronze-300 font-bold border border-bronze-500/30">
-                        02. WORKFORCE
+                        02. MOBILE APP
                       </span>
-                      <span className="text-telemetry-emerald font-bold">HAVERSINE</span>
+                      <span className="text-telemetry-emerald font-bold">GEOFENCING</span>
                     </div>
                     <div className="flex items-center gap-2 mt-1">
                       <ShieldCheck className="w-4 h-4 text-bronze-600 group-hover:text-bronze-500 transition-colors" />
@@ -124,13 +124,13 @@ export const App: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mt-2 text-xs text-espresso-800 line-clamp-3 leading-relaxed">
-                      3D isometric operations map with sub-meter Haversine GPS geo-fencing, facial camera verification, breach triggers, and manager dispatch analytics.
+                      Mobile attendance tracking app featuring GPS geofencing, sub-meter Haversine distance verification, facial verification, and real-time manager alerts.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-bronze-200/60 flex items-center justify-between font-mono text-[10px]">
                     <span className="text-taupe-400">FLUTTER / NODE / POSTGRES</span>
                     <span className="font-bold text-bronze-600 group-hover:text-espresso-950 flex items-center gap-1">
-                      ENTER ENVIRONMENT <ArrowRight className="w-3 h-3" />
+                      VIEW PROJECT <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
@@ -143,9 +143,9 @@ export const App: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between text-[10px] font-mono mb-2">
                       <span className="px-2 py-0.5 bg-bronze-500/15 text-bronze-700 font-bold border border-bronze-500/30">
-                        03. DIXON ENTERPRISE
+                        03. DIXON TECH
                       </span>
-                      <span className="text-telemetry-cyan font-bold">TEAMS / GEMINI</span>
+                      <span className="text-telemetry-cyan font-bold">NLP + GEMINI</span>
                     </div>
                     <div className="flex items-center gap-2 mt-1">
                       <Bot className="w-4 h-4 text-bronze-600 group-hover:text-bronze-500 transition-colors" />
@@ -154,13 +154,13 @@ export const App: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mt-2 text-xs text-espresso-800 line-clamp-3 leading-relaxed">
-                      3D neural cognitive core with dual-tier intent routing: local wink-nlp tokenization + Google Gemini generative fallback for enterprise workforce workflows.
+                      Enterprise workforce assistant built for Dixon Technologies using local NLP tokenization with Google Gemini AI fallback for staff queries.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-bronze-200/60 flex items-center justify-between font-mono text-[10px]">
                     <span className="text-taupe-400">AZURE BOT / MONGODB</span>
                     <span className="font-bold text-bronze-600 group-hover:text-espresso-950 flex items-center gap-1">
-                      ENTER ENVIRONMENT <ArrowRight className="w-3 h-3" />
+                      VIEW PROJECT <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ export const App: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between text-[10px] font-mono mb-2">
                       <span className="px-2 py-0.5 bg-ivory-200 text-espresso-900 font-bold border border-bronze-300">
-                        04. DATA LAB
+                        04. DATA SCIENCE
                       </span>
                       <span className="text-taupe-400">1,140+ FIRMS</span>
                     </div>
@@ -184,13 +184,13 @@ export const App: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mt-2 text-xs text-espresso-800 line-clamp-3 leading-relaxed">
-                      Quantitative macroeconomic laboratory analyzing 428,000+ headcount contractions using Python, Dash, Plotly Express, and time-series decomposition.
+                      Interactive macroeconomic dashboard visualizing tech industry layoff trends across 1,140+ global companies with Python, Dash, and Plotly.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-bronze-200/60 flex items-center justify-between font-mono text-[10px]">
                     <span className="text-taupe-400">PYTHON / DASH / PANDAS</span>
                     <span className="font-bold text-bronze-600 group-hover:text-espresso-950 flex items-center gap-1">
-                      ENTER ENVIRONMENT <ArrowRight className="w-3 h-3" />
+                      VIEW PROJECT <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
@@ -203,9 +203,9 @@ export const App: React.FC = () => {
                   <div>
                     <div className="flex items-center justify-between text-[10px] font-mono mb-2">
                       <span className="px-2 py-0.5 bg-ivory-200 text-espresso-900 font-bold border border-bronze-300">
-                        05. INFRASTRUCTURE
+                        05. FULL-STACK
                       </span>
-                      <span className="text-telemetry-emerald font-bold">99%+ UPTIME</span>
+                      <span className="text-telemetry-emerald font-bold">WEB APP</span>
                     </div>
                     <div className="flex items-center gap-2 mt-1">
                       <Building className="w-4 h-4 text-bronze-600 group-hover:text-bronze-500 transition-colors" />
@@ -214,35 +214,35 @@ export const App: React.FC = () => {
                       </h3>
                     </div>
                     <p className="mt-2 text-xs text-espresso-800 line-clamp-3 leading-relaxed">
-                      Production multi-tenant residential software with dual Admin/Resident dashboards, automated water pressure scheduling, and continuous CI/CD delivery.
+                      Residential society management software featuring resident and administrative dashboards, maintenance requests, and automated scheduling.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-bronze-200/60 flex items-center justify-between font-mono text-[10px]">
                     <span className="text-taupe-400">REACT / EXPRESS / NODE</span>
                     <span className="font-bold text-bronze-600 group-hover:text-espresso-950 flex items-center gap-1">
-                      ENTER ENVIRONMENT <ArrowRight className="w-3 h-3" />
+                      VIEW PROJECT <ArrowRight className="w-3 h-3" />
                     </span>
                   </div>
                 </div>
 
-                {/* Direct Comms CTA Card */}
+                {/* Contact Card */}
                 <div 
                   onClick={() => handleSetRoute('terminal')}
                   className="lab-card-dark p-6 border border-bronze-500/50 hover:border-bronze-400 transition-all cursor-pointer group flex flex-col justify-between text-ivory-100 shadow-panel"
                 >
                   <div>
                     <div className="font-mono text-[10px] text-bronze-400 uppercase tracking-widest">
-                      // DIRECT INVOCATION
+                      GET IN TOUCH
                     </div>
                     <h3 className="font-display font-bold text-xl text-ivory-50 mt-2">
-                      Terminal & Direct Comms
+                      Contact & Connect
                     </h3>
                     <p className="mt-2 text-xs text-taupe-300 leading-relaxed font-sans">
-                      Connect directly via interactive laboratory command prompt, email transmission, or download Prince's certified engineering resume.
+                      Open to internships, freelance projects, and technical collaborations. Send a message or explore the interactive terminal.
                     </p>
                   </div>
                   <div className="mt-4 pt-3 border-t border-espresso-700 font-mono text-xs text-bronze-300 font-bold flex items-center justify-between">
-                    <span>DISPATCH TRANSMISSION</span>
+                    <span>OPEN CONTACT</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>

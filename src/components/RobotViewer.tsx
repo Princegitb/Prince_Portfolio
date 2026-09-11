@@ -381,93 +381,38 @@ export const RobotViewer: React.FC<RobotViewerProps> = ({ onRobotClick }) => {
       {/* Simulation Grid Background */}
       <div className="absolute inset-0 dark-lab-grid opacity-30 pointer-events-none"></div>
 
-      {/* Laboratory Calibration Reticle Overlays */}
+      {/* Clean Reticle & Status Overlay */}
       <div className="absolute inset-0 pointer-events-none p-4 flex flex-col justify-between">
-        {/* Top Telemetry Header */}
-        <div className="flex items-center justify-between text-[10px] font-mono text-taupe-300 border-b border-bronze-700/30 pb-2">
+        {/* Top Header */}
+        <div className="flex items-center justify-between text-[11px] font-mono text-taupe-300 border-b border-bronze-700/30 pb-2">
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-telemetry-cyan animate-ping"></span>
+            <span className="inline-block w-2 h-2 rounded-full bg-telemetry-cyan animate-pulse"></span>
             <span className="text-bronze-300 font-semibold tracking-wider">
-              SIMULATION 01 // AUTONOMOUS GAZE TRACKING
+              INTERACTIVE 3D ROBOT
             </span>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-taupe-400">KINEMATICS: <span className="text-ivory-100 font-medium">6-DOF ACTIVE</span></span>
-            <span className="text-bronze-500">|</span>
+            <span className="text-taupe-400">Head Pitch: <span className="text-ivory-100 font-medium">{telemetry.headPitch}</span></span>
+            <span className="text-bronze-500">•</span>
             <span className="text-telemetry-cyan font-semibold">{telemetry.fps} FPS</span>
           </div>
         </div>
 
-        {/* Center Crosshair & Calibration Targets */}
+        {/* Center Subtle Target Indicator */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          {/* Subtle central target */}
           <div className="w-48 h-48 rounded-full border border-bronze-600/10 flex items-center justify-center">
             <div className="w-24 h-24 rounded-full border border-bronze-500/15 border-dashed animate-spin" style={{ animationDuration: '30s' }}></div>
           </div>
         </div>
 
-        {/* Left Side Telemetry Annotations (Printed engineering style) */}
-        <div className="absolute left-4 top-16 space-y-3 font-mono text-[10px] text-taupe-300 bg-espresso-950/70 p-3 border-l-2 border-bronze-500 backdrop-blur-sm pointer-events-none">
-          <div className="text-bronze-400 text-[9px] uppercase tracking-widest font-bold">
-            // SENSORY TELEMETRY
-          </div>
-          <div className="space-y-1">
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">SYS STATE:</span>
-              <span className="text-telemetry-cyan font-bold">ONLINE</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">GAZE TRACK:</span>
-              <span className={`font-semibold ${telemetry.status === 'LOCKED' ? 'text-telemetry-cyan' : 'text-bronze-300'}`}>
-                {telemetry.status}
-              </span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">NEURAL LOAD:</span>
-              <span className="text-ivory-200">38.4% NOMINAL</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">CORE TEMP:</span>
-              <span className="text-ivory-200">36.8°C NORMAL</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Side Kinematic Annotations */}
-        <div className="absolute right-4 top-16 space-y-3 font-mono text-[10px] text-taupe-300 bg-espresso-950/70 p-3 border-r-2 border-bronze-500 backdrop-blur-sm pointer-events-none">
-          <div className="text-bronze-400 text-[9px] uppercase tracking-widest font-bold">
-            // JOINT KINEMATICS
-          </div>
-          <div className="space-y-1">
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">HEAD PITCH:</span>
-              <span className="text-ivory-200">{telemetry.headPitch}</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">HEAD YAW:</span>
-              <span className="text-ivory-200">{telemetry.headYaw}</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">TARGET X/Y:</span>
-              <span className="text-bronze-300">{telemetry.cursorX} / {telemetry.cursorY}</span>
-            </div>
-            <div className="flex justify-between gap-4">
-              <span className="text-taupe-400">SERVO LATENCY:</span>
-              <span className="text-telemetry-cyan">4.2ms</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Technical Status Bar */}
-        <div className="flex items-center justify-between text-[10px] font-mono text-taupe-400 border-t border-bronze-700/30 pt-2 bg-gradient-to-t from-espresso-950/90 to-transparent">
+        {/* Bottom Clean Status Bar */}
+        <div className="flex items-center justify-between text-[11px] font-mono text-taupe-400 border-t border-bronze-700/30 pt-2 bg-gradient-to-t from-espresso-950/90 to-transparent">
           <div className="flex items-center gap-2">
             <Crosshair className="w-3.5 h-3.5 text-bronze-400" />
-            <span>OPTICAL VECTOR: DYNAMIC 3D POSE INTERPOLATION</span>
+            <span>WebGL Three.js • Real-time Gaze Tracking</span>
           </div>
-          <div className="hidden sm:flex items-center gap-3 text-bronze-400">
-            <span>MODEL: PROTOTYPE K-VRC // 05719052024</span>
-            <span>|</span>
-            <span className="text-taupe-300">INTERACTION: MOUSE-GAZE SYNCHRONIZED</span>
+          <div className="hidden sm:flex items-center gap-3 text-bronze-300 font-medium">
+            <span>Move mouse across screen to tilt & look</span>
           </div>
         </div>
       </div>
@@ -476,11 +421,11 @@ export const RobotViewer: React.FC<RobotViewerProps> = ({ onRobotClick }) => {
       {loading && (
         <div className="absolute inset-0 bg-espresso-950 flex flex-col items-center justify-center gap-3 text-ivory-100 font-mono z-20">
           <div className="w-12 h-12 border-2 border-bronze-500/30 border-t-bronze-400 rounded-full animate-spin"></div>
-          <div className="text-xs text-bronze-300 tracking-widest uppercase">
-            INITIALIZING 3D KINEMATICS MATRIX... {loadProgress > 0 ? `${loadProgress}%` : ''}
+          <div className="text-xs text-bronze-300 tracking-widest uppercase font-semibold">
+            Loading 3D Model... {loadProgress > 0 ? `${loadProgress}%` : ''}
           </div>
-          <div className="text-[10px] text-taupe-400">
-            COMPUTING PBR METALLIC SHADERS & RIGGED JOINT HIERARCHY
+          <div className="text-[11px] text-taupe-400">
+            Initializing Three.js WebGL Scene
           </div>
         </div>
       )}

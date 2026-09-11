@@ -134,45 +134,45 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
 
   return (
     <div className="py-10 lab-container archival-bg-grid min-h-[90vh]">
-      {/* Archive Document Top Bar */}
+      {/* Document Top Bar */}
       <div className="flex flex-wrap items-center justify-between border-b border-bronze-500/30 pb-4 mb-8 font-mono text-xs text-taupe-400">
         <div className="flex items-center gap-2">
           <FileText className="w-4 h-4 text-bronze-600" />
           <span className="text-bronze-600 font-bold tracking-wider">
-            ARCHIVAL RECORD // 05719052024-DOC
+            PRINCE SHUKLA
           </span>
-          <span className="text-bronze-400">|</span>
-          <span>CURRICULUM & RESEARCH ORIENTATION</span>
+          <span className="text-bronze-400">•</span>
+          <span>BACKGROUND & EDUCATION</span>
         </div>
         <div className="flex items-center gap-3">
-          <span className="text-espresso-900 font-medium">DISCIPLINE: AUTOMATION & ROBOTICS</span>
-          <span className="text-bronze-400">|</span>
-          <span className="text-telemetry-cyan font-bold">STATUS: FILED & VERIFIED</span>
+          <span className="text-espresso-900 font-medium">B.TECH AUTOMATION & ROBOTICS</span>
+          <span className="text-bronze-400">•</span>
+          <span className="text-telemetry-emerald font-bold">DELHI, INDIA</span>
         </div>
       </div>
 
       {/* Main Editorial Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        {/* Left Column: Academic Credentials & Philosophy (7 Cols) */}
+        {/* Left Column: Academic Credentials & Principles (7 Cols) */}
         <div className="lg:col-span-7 space-y-8">
           <div>
             <span className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-semibold">
-              // ENGINEERING PROFILE
+              BACKGROUND
             </span>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-espresso-950 mt-1">
-              Autonomous Systems & Applied Intelligence
+              About Me & Engineering Focus
             </h1>
             <p className="mt-4 font-sans text-base text-espresso-800 leading-relaxed">
-              Prince is an engineering scholar at the University School of Automation and Robotics (GGSIPU), Delhi. His work operates at the confluence of machine learning model architectures, data science analytics, and high-performance distributed software platforms.
+              I am a B.Tech student in Automation & Robotics at the University School of Automation and Robotics (USAR), GGSIPU, Delhi. I focus on machine learning systems, data analytics, and full-stack software development, turning complex datasets into reliable, intuitive tools.
             </p>
           </div>
 
-          {/* Academic Dossier Card */}
+          {/* Academic Card */}
           <div className="lab-card-light p-6 border border-bronze-400/40">
             <div className="flex items-center gap-2 mb-4 pb-3 border-b border-bronze-300/40">
               <GraduationCap className="w-5 h-5 text-bronze-600" />
               <h2 className="font-display font-bold text-lg text-espresso-950">
-                Formal Academic Foundation
+                Education
               </h2>
             </div>
 
@@ -192,7 +192,7 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
                   </span>
                 </div>
                 <div className="mt-2 text-[11px] text-espresso-800">
-                  Focus: Machine Learning Architectures, Data Science, Statistical Modeling, and Scalable Full-Stack Systems.
+                  Coursework & Focus: Machine Learning, Data Structures, Statistical Modeling, and Full-Stack Web Development.
                 </div>
               </div>
 
@@ -217,61 +217,61 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
                     88% <span className="text-xs font-mono text-taupe-400">CBSE</span>
                   </div>
                   <div className="text-[10px] text-taupe-400 mt-1">
-                    CBSE Board Delhi • Strong STEM Core
+                    CBSE Board Delhi • Science & Mathematics
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Engineering Philosophy Cards */}
+          {/* Principles Cards */}
           <div className="space-y-4">
             <div className="font-mono text-xs text-bronze-600 uppercase tracking-widest font-bold">
-              // CORE ENGINEERING PHILOSOPHY
+              ENGINEERING PRINCIPLES
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="p-4 bg-espresso-900 text-ivory-100 border border-bronze-500/30">
-                <div className="text-bronze-300 font-mono text-xs font-bold">01 // SYNTHESIS</div>
+                <div className="text-bronze-300 font-mono text-xs font-bold">01 • PRACTICAL ML</div>
                 <div className="font-display text-sm font-bold mt-1 text-ivory-50">
-                  Physical-Digital Convergence
+                  Real-World Impact
                 </div>
                 <p className="mt-2 text-xs text-taupe-300 leading-relaxed">
-                  Algorithms without physical actuators remain theoretical; robotics without cognitive neural perception is mechanical repetition.
+                  Building machine learning models that solve practical problems, verified against tangible data and real user needs.
                 </p>
               </div>
 
               <div className="p-4 bg-espresso-900 text-ivory-100 border border-bronze-500/30">
-                <div className="text-bronze-300 font-mono text-xs font-bold">02 // EMPIRICISM</div>
+                <div className="text-bronze-300 font-mono text-xs font-bold">02 • CLEAN CODE</div>
                 <div className="font-display text-sm font-bold mt-1 text-ivory-50">
-                  Empirical Validation
+                  Maintainability
                 </div>
                 <p className="mt-2 text-xs text-taupe-300 leading-relaxed">
-                  Mathematical proof verified through ground sensors and satellite telemetry (R² = 0.89 model benchmarking across 706 cells).
+                  Writing clean, modular, and maintainable software with clear architecture and reliable performance under load.
                 </p>
               </div>
 
               <div className="p-4 bg-espresso-900 text-ivory-100 border border-bronze-500/30">
-                <div className="text-bronze-300 font-mono text-xs font-bold">03 // STABILITY</div>
+                <div className="text-bronze-300 font-mono text-xs font-bold">03 • RELIABILITY</div>
                 <div className="font-display text-sm font-bold mt-1 text-ivory-50">
-                  Autonomous Reliability
+                  Resilient Systems
                 </div>
                 <p className="mt-2 text-xs text-taupe-300 leading-relaxed">
-                  Systems engineered to sustain continuous telemetry, self-healing fallbacks (Gemini AI fallback), and 99%+ production uptime.
+                  Designing responsive interfaces and robust backend pipelines with proper error handling and fallback strategies.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Right Column: Interactive 3D Kinematic Gimbal & Technical Focus (5 Cols) */}
+        {/* Right Column: 3D Gimbal & Focus (5 Cols) */}
         <div className="lg:col-span-5 space-y-6">
           {/* 3D Interactive Mechanical Schematic */}
           <div className="lab-card-dark p-4 relative overflow-hidden border border-bronze-500/40 shadow-panel">
             <div className="flex items-center justify-between pb-3 border-b border-espresso-700/70 font-mono text-xs text-ivory-200">
               <div className="flex items-center gap-2">
                 <Layers className="w-4 h-4 text-bronze-400" />
-                <span className="font-bold text-bronze-300">KINEMATIC SCHEMATIC // 3-AXIS GIMBAL</span>
+                <span className="font-bold text-bronze-300">INTERACTIVE 3D GIMBAL</span>
               </div>
               <button
                 onClick={() => {
@@ -290,42 +290,42 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
             />
 
             <div className="pt-2 border-t border-espresso-800 text-[10px] font-mono text-taupe-400 flex items-center justify-between">
-              <span>REAL-TIME 3D KINEMATICS ENGINE</span>
-              <span className="text-telemetry-cyan font-medium">ORIENTATION: AUTONOMOUS ROTATION</span>
+              <span>Three.js Mechanical Rig</span>
+              <span className="text-telemetry-cyan font-medium">Drag to inspect</span>
             </div>
           </div>
 
-          {/* Research Focus Matrix */}
+          {/* Core Areas */}
           <div className="lab-card-light p-5 border border-bronze-400/40">
             <div className="font-mono text-xs text-bronze-600 font-bold uppercase tracking-wider mb-3">
-              // ACTIVE RESEARCH THRUSTS
+              AREAS OF INTEREST
             </div>
 
             <div className="space-y-3 font-mono text-xs">
               <div className="p-2.5 bg-ivory-50 border-l-2 border-bronze-500">
                 <div className="font-bold text-espresso-950">
-                  GEOSPATIAL SATELLITE ML
+                  MACHINE LEARNING & DATA SCIENCE
                 </div>
                 <div className="text-[11px] text-espresso-800 mt-1">
-                  Integrating Sentinel-5P tropospheric column data, NASA VIIRS active thermal hotspots, and ECMWF meteorological vectors into gradient-boosted spatial forecast grids.
+                  Predictive modeling, gradient boosting, and interactive analytics dashboards using Python, XGBoost, Pandas, and Plotly.
                 </div>
               </div>
 
               <div className="p-2.5 bg-ivory-50 border-l-2 border-telemetry-teal">
                 <div className="font-bold text-espresso-950">
-                  ENTERPRISE CONVERSATIONAL AUTOMATION
+                  APPLIED AI & ENTERPRISE BOTS
                 </div>
                 <div className="text-[11px] text-espresso-800 mt-1">
-                  Dual-tier natural language processing: rapid local intent detection via tokenization coupled with cloud-hosted generative fallback models for unconstrained queries.
+                  Conversational agents combining local NLP intent classification with Google Gemini generative models for internal workflows.
                 </div>
               </div>
 
               <div className="p-2.5 bg-ivory-50 border-l-2 border-espresso-800">
                 <div className="font-bold text-espresso-950">
-                  HAVERSINE GEODETIC TELEMETRY
+                  FULL-STACK WEB DEVELOPMENT
                 </div>
                 <div className="text-[11px] text-espresso-800 mt-1">
-                  Sub-meter boundary computation for real-time field guard verification, tamper-evident GPS telemetry, and automated operational alerting.
+                  Modern React frontends, scalable Node/Express REST APIs, and database integration across MongoDB and PostgreSQL.
                 </div>
               </div>
             </div>
@@ -338,7 +338,7 @@ export const AboutResearch: React.FC<AboutResearchProps> = ({ setRoute }) => {
                 }}
                 className="text-xs font-mono font-bold text-bronze-600 hover:text-espresso-950 flex items-center gap-1.5"
               >
-                <span>NEXT: EXPLORE DIXON EXPERIENCE</span>
+                <span>NEXT: WORK EXPERIENCE</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
             </div>
