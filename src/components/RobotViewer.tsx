@@ -280,12 +280,13 @@ export const RobotViewer: React.FC<RobotViewerProps> = ({ onRobotClick }) => {
       const scanSweep = Math.sin(elapsed * 0.3) * 0.015;
 
       // 1. Dynamic Head / Face Gaze Tracking (Upwards/Downwards Pitch & Left/Right Yaw)
-      const targetHeadPitch = mouse.y * 0.42 + breathing;
+      // Inverting sign ensures moving cursor UP tilts the face UPWARDS, and moving cursor DOWN tilts the face DOWNWARDS
+      const targetHeadPitch = -mouse.y * 0.42 + breathing;
       const targetHeadYaw = mouse.x * 0.45 + scanSweep;
 
       // 2. Subtle Body & Pedestal Alignment (Stays grounded & upright)
       const targetBodyYaw = mouse.x * 0.15;
-      const targetBodyPitch = mouse.y * 0.04;
+      const targetBodyPitch = -mouse.y * 0.04;
 
       currentRot.headX = THREE.MathUtils.lerp(currentRot.headX, targetHeadPitch, 0.12);
       currentRot.headY = THREE.MathUtils.lerp(currentRot.headY, targetHeadYaw, 0.12);
@@ -331,7 +332,7 @@ export const RobotViewer: React.FC<RobotViewerProps> = ({ onRobotClick }) => {
         setTelemetry({
           cursorX: parseFloat(mouse.x.toFixed(2)),
           cursorY: parseFloat(mouse.y.toFixed(2)),
-          headPitch: `${(currentRot.headX * (180 / Math.PI)).toFixed(1)}°`,
+          headPitch: `${(-currentRot.headX * (180 / Math.PI)).toFixed(1)}°`,
           headYaw: `${(currentRot.headY * (180 / Math.PI)).toFixed(1)}°`,
           fps: Math.min(60, Math.max(30, currentFps)),
           status: Math.abs(mouse.targetX - mouse.x) > 0.08 || Math.abs(mouse.targetY - mouse.y) > 0.08 ? 'ACQUIRING' : 'LOCKED'
